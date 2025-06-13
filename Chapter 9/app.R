@@ -2,7 +2,7 @@
 # Case Study: Chapter 9 – Interactive Grid Planning with PyPSA and Shiny
 #
 # Authors:   Neeraj Dhanraj Bokde  (www.neerajbokde.in)
-#            Carlo Fanara
+#            and Carlo Fanara
 # Affiliation: Renewable & Sustainable Energy Research Center, TII, Abu Dhabi
 # Corresponding author: neeraj.bokde@tii.ae / neerajdhanraj@gmail.com
 #
