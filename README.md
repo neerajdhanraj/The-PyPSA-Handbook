@@ -1,105 +1,85 @@
-# 🔌 The PyPSA Handbook – Code Repository
+# The PyPSA Handbook – Code Repository
 
-**Authors**: Neeraj Dhanraj Bokde (www.neerajbokde.in), Carlo Fanara  
-**Affiliation**: Renewable and Sustainable Energy Research Center, TII, Abu Dhabi  
-**Contact**: neeraj.bokde@tii.ae / neerajdhanraj@gmail.com  
+**Authors**: Dr. Neeraj Dhanraj Bokde (www.neerajbokde.in) and Dr. Carlo Fanara
 
----
+**Affiliation**: Renewable and Sustainable Energy Research Center, Technology Innovation Institute (TII), Abu Dhabi
 
-## 📖 About the Handbook
+**Contact**: [neeraj.bokde@tii.ae](mailto:neeraj.bokde@tii.ae) | [neerajdhanraj@gmail.com](mailto:neerajdhanraj@gmail.com)
 
-_The PyPSA Handbook: Integrated Power System Analysis and Renewable Energy Modeling_ is a comprehensive guide for building, analyzing, and visualizing energy systems using [PyPSA](https://pypsa.org/). The handbook bridges theory with practice through reproducible case studies covering topics such as optimal dispatch, transmission expansion, microgrids, and interactive modeling via Shiny.
+## Overview
 
-This repository contains all code, datasets, and notebooks used in the book, structured chapter-wise.
+*The PyPSA Handbook: Integrated Power System Analysis and Renewable Energy Modeling* is a comprehensive reference for modeling, simulation, and optimization of power systems using [PyPSA](https://pypsa.org/). This repository provides all supplementary materials for the book, including reproducible code, input datasets, and visualizations for the case studies discussed in each chapter.
 
----
+The materials are structured to support both self-paced learning and formal teaching, and may be used in conjunction with the published text to implement and extend energy system models using open-source tools.
 
-## 📁 Repository Structure
+## Repository Structure
 
-Each chapter folder contains:
+The repository is organized by chapter. Each folder contains:
 
-- 📘 `.py` or `.ipynb` files for case study code
-- 📊 Input datasets if applicable
-- 🔧 Scripts for simulation and visualization
-- 📱 R Shiny files (Chapter 9 only)
+* Python scripts (`.py`) and Jupyter notebooks (`.ipynb`) for case studies
+* Input datasets (`.csv`, where applicable)
+* Supporting scripts for simulation and visualization
+* R Shiny files for the interactive application in Chapter 9
 
----
+All scripts are documented and correspond directly to specific case studies described in the book.
 
-## 📚 Chapter Overview
+## Chapter Index
 
-### ✅ **Chapter 4 – Advanced Modeling Techniques in PyPSA**
-> Explores time-series modeling, solver configuration, OPF/SCOPF/LOPF workflows with code-driven examples.
+### Chapter 4 – Advanced Modeling Techniques in PyPSA
 
-**Files**:
-- `Chapter_4_CS_1.py`: PyPSA LOPF demonstration
-- `Chapter_4_CS_1.ipynb`: Interactive notebook version
+Time series modeling, solver configuration, and OPF/SCOPF/LOPF workflows
 
----
+**Files**: `Chapter_4_CS_1.py`, `Chapter_4_CS_1.ipynb`
 
-### ✅ **Chapter 5 – Decarbonization and Renewable Integration**
-> Covers CHP modeling, heat pumps, and basic sector coupling via Links and Stores in PyPSA.
+### Chapter 5 – Decarbonization and Renewable Integration
 
-**Files**:
-- `Chapter_5_CS_1.py` / `.ipynb`: CHP-based heat-power system
-- `Chapter_5_CS_2.py` / `.ipynb`: Electrification and demand-supply coordination
+Sector coupling, combined heat and power, and demand-supply balancing
 
----
+**Files**: `Chapter_5_CS_1.py`, `Chapter_5_CS_2.py`, and notebook variants
 
-### ✅ **Chapter 6 – Microgrids and Distributed Energy Resources**
-> Designs a rural electrification system with RE, batteries, and demand response.
+### Chapter 6 – Microgrids and Distributed Energy Resources
 
-**Files**:
-- `Chapter_6_CS_1.py` / `.ipynb`: Full microgrid model
-- `microgrid_input_timeseries_2020.csv`: Hourly input data
+Rural electrification with renewables, storage systems, and demand response
 
----
+**Files**: `Chapter_6_CS_1.py`, `microgrid_input_timeseries_2020.csv`
 
-### ✅ **Chapter 7 – Transmission Planning and Expansion**
-> Models a greenfield power system with North–South spatial separation. Co-optimizes generation, storage, and corridor investments.
+### Chapter 7 – Transmission Planning and Expansion
 
-**Files**:
-- `Chapter_7_CS_1.py` / `.ipynb`: Full LOPF and investment planning model
+Spatial transmission corridor planning with investment co-optimization
 
----
+**Files**: `Chapter_7_CS_1.py`, `Chapter_7_CS_1.ipynb`
 
-### ✅ **Chapter 8 – Reliability and Resilience in Power Systems**
-> Stress-tests the Chapter 7 system with multiple disruption scenarios.
+### Chapter 8 – Reliability and Resilience in Power Systems
 
-**Files**:
-- `Chapter_8_CS_1.py` / `.ipynb`: Scenarios A–D (weather, outage, failure)
-- `Chapter_8_CS_2.py` / `.ipynb`: Strict SCOPF modeling across contingencies
+Stress-testing and security-constrained optimization scenarios
 
----
+**Files**: `Chapter_8_CS_1.py`, `Chapter_8_CS_2.py`, and notebook variants
 
-### ✅ **Chapter 9 – Integrating PyPSA with Other Tools**
-> Demonstrates PyPSA–Shiny integration with a real-time dispatch simulator.
+### Chapter 9 – Integrating PyPSA with Other Tools
 
-**Files**:
-- `app.R`: R Shiny frontend for interactive modeling
-- `pypsa_model.py`: Python backend model executed via `reticulate`
-- `Chapter_9.Rproj`: RStudio project for structured development
+Interactive modeling interface using R, Shiny, and Python integration
 
----
+**Files**: `app.R`, `pypsa_model.py`, `Chapter_9.Rproj`
 
-## ⚙️ Software Requirements
+## Software Requirements
 
-- Python 3.8+
-- PyPSA v0.21+  
-- pandas, numpy, matplotlib
-- R (v4.2+) + shiny, reticulate (for Chapter 9)
-- Jupyter Notebook (for `.ipynb` files)
+To execute the examples in this repository, the following software is recommended:
 
----
+* Python 3.8 or later
+* PyPSA (version 0.21 or later)
+* Required Python packages: `numpy`, `pandas`, `matplotlib`, `pyomo`, `linopy`
+* R 4.2 or later (for Chapter 9) with packages: `shiny`, `reticulate`
+* Jupyter Notebook (for interactive notebooks)
 
-## 📜 License
+Environment setup instructions are detailed in Chapter 2 of the book.
 
-This repository is released under the **MIT License**. See `LICENSE` for more details.
+## License
 
----
+This repository is licensed under the **MIT License**. See the `LICENSE` file for details.
 
-## 📌 Citation
+## Citation
 
-If you use this repository or book in your research, please cite:
+If you use this repository or the book in your academic or professional work, please cite as follows:
 
 ```bibtex
 @book{bokde2025pypsa,
@@ -109,3 +89,6 @@ If you use this repository or book in your research, please cite:
   publisher = {Elsevier Science},
   isbn      = {9780443266317}
 }
+```
+
+
